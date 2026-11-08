@@ -809,11 +809,16 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
   CMakeFiles/4.4.5/CMakeSystem.cmake \
   titan-task-manager_autogen/moc_predefs.h \
   /Users/chanika/Projects/TitanTaskManager/include/systemmonitor.h \
+  /Users/chanika/Projects/TitanTaskManager/include/thmmonitor.h \
+  /Users/chanika/Projects/TitanTaskManager/include/thmstate.hpp \
   /Users/chanika/Projects/TitanTaskManager/src/main.cpp \
   /Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp \
+  /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp \
+  /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QElapsedTimer \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QHash \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QObject \
+  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QString \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QTimer \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QVariantList \
   /opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/QList \
@@ -2461,6 +2466,10 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstyleimplpluginAdditionalTargetInfo.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicknativestylepluginTargetsPrecheck.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginTargetsPrecheck.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginTargets-release.cmake:
@@ -2474,8 +2483,6 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstyleimplpluginAdditionalTargetInfo.cmake:
 
@@ -2582,10 +2589,6 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dhelpersimplpluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dhelpersimplpluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicknativestylepluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginTargetsPrecheck.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3deffectpluginTargets-release.cmake:
 
@@ -2967,6 +2970,8 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargetsPrecheck.cmake:
 
+/Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp:
+
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__type_traits/nat.h:
@@ -3008,10 +3013,6 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__type_traits/is_function.h:
-
-/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake:
 
@@ -3433,18 +3434,6 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6WebChannelQuickpluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargets-release.cmake:
-
-/opt/homebrew/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargetsPrecheck.cmake:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
 /opt/homebrew/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/sys/_types/_dev_t.h:
@@ -3657,6 +3646,12 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 
 /opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qgenericatomic.h:
 
+/opt/homebrew/lib/cmake/Qt6Network/Qt6QAppleNetworkInformationPluginTargetsPrecheck.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargets-release.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6WebChannelQuickpluginTargets-release.cmake:
+
 /opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h:
 
 /opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qdatastream.h:
@@ -3712,6 +3707,8 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__math/exponential_functions.h:
+
+/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QString:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargetsPrecheck.cmake:
 
@@ -3803,9 +3800,27 @@ titan-task-manager_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/M
 
 /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QTimer:
 
+/opt/homebrew/lib/cmake/Qt6QmlTools/Qt6QmlToolsConfig.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargetsPrecheck.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
+
+/Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__type_traits/is_function.h:
+
+/opt/homebrew/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/_types/_uintmax_t.h:
 
 /Users/chanika/Projects/TitanTaskManager/src/main.cpp:
+
+/opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginConfig.cmake:
+
+/Users/chanika/Projects/TitanTaskManager/include/thmmonitor.h:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6TextToSpeechQmlTargets-release.cmake:
 
@@ -4019,6 +4034,10 @@ CMakeFiles/4.4.5/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/sys/_types/_u_int.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/stdint.h:
+
+/Users/chanika/Projects/TitanTaskManager/include/thmstate.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__ranges/size.h:
 
 /opt/homebrew/lib/cmake/Qt6Qml/Qt6QDebugMessageServiceFactoryPluginConfig.cmake:
@@ -4066,8 +4085,6 @@ CMakeFiles/4.4.5/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/arm/types.h:
 
 /opt/homebrew/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/stdint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
@@ -4956,8 +4973,6 @@ CMakeFiles/4.4.5/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h:
 
 /opt/homebrew/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/__string/char_traits.h:
 

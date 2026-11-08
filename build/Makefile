@@ -557,6 +557,54 @@ src/systemmonitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.s
 .PHONY : src/systemmonitor.cpp.s
 
+src/thmmonitor.o: src/thmmonitor.cpp.o
+.PHONY : src/thmmonitor.o
+
+# target to build an object file
+src/thmmonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o
+.PHONY : src/thmmonitor.cpp.o
+
+src/thmmonitor.i: src/thmmonitor.cpp.i
+.PHONY : src/thmmonitor.i
+
+# target to preprocess a source file
+src/thmmonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.i
+.PHONY : src/thmmonitor.cpp.i
+
+src/thmmonitor.s: src/thmmonitor.cpp.s
+.PHONY : src/thmmonitor.s
+
+# target to generate assembly for a file
+src/thmmonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.s
+.PHONY : src/thmmonitor.cpp.s
+
+src/thmstate.o: src/thmstate.cpp.o
+.PHONY : src/thmstate.o
+
+# target to build an object file
+src/thmstate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o
+.PHONY : src/thmstate.cpp.o
+
+src/thmstate.i: src/thmstate.cpp.i
+.PHONY : src/thmstate.i
+
+# target to preprocess a source file
+src/thmstate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.i
+.PHONY : src/thmstate.cpp.i
+
+src/thmstate.s: src/thmstate.cpp.s
+.PHONY : src/thmstate.s
+
+# target to generate assembly for a file
+src/thmstate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/titan-task-manager.dir/build.make CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.s
+.PHONY : src/thmstate.cpp.s
+
 titan-task-manager_autogen/mocs_compilation.o: titan-task-manager_autogen/mocs_compilation.cpp.o
 .PHONY : titan-task-manager_autogen/mocs_compilation.o
 
@@ -655,6 +703,12 @@ help:
 	@echo "... src/systemmonitor.o"
 	@echo "... src/systemmonitor.i"
 	@echo "... src/systemmonitor.s"
+	@echo "... src/thmmonitor.o"
+	@echo "... src/thmmonitor.i"
+	@echo "... src/thmmonitor.s"
+	@echo "... src/thmstate.o"
+	@echo "... src/thmstate.i"
+	@echo "... src/thmstate.s"
 	@echo "... titan-task-manager_autogen/mocs_compilation.o"
 	@echo "... titan-task-manager_autogen/mocs_compilation.i"
 	@echo "... titan-task-manager_autogen/mocs_compilation.s"

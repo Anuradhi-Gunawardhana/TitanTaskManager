@@ -198,10 +198,38 @@ CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp -o CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.s
 
+CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
+CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o: /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp
+CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o -MF CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o.d -o CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o -c /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp
+
+CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp > CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.i
+
+CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp -o CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.s
+
+CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
+CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o: /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp
+CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o -MF CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o.d -o CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o -c /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp
+
+CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp > CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.i
+
+CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp -o CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.s
+
 CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o: titan-task-manager_qmltyperegistrations.cpp
 CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o -MF CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o.d -o CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_qmltyperegistrations.cpp
 
 CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.s:
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o: .qt/rcc/qrc_qmake_TitanTaskManager.cpp
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o -MF CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o.d -o CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp
 
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.i: cmake_force
@@ -229,7 +257,7 @@ CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.s
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o: .rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o -MF CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o.d -o CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp
 
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.i: cmake_force
@@ -243,7 +271,7 @@ CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcach
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o: .rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o -MF CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o.d -o CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp
 
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Main_qml.cpp.i: cmake_force
@@ -257,7 +285,7 @@ CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Mai
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o: .rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o -MF CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o.d -o CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp
 
 CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_MetricCard_qml.cpp.i: cmake_force
@@ -271,7 +299,7 @@ CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qml_Met
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o: CMakeFiles/titan-task-manager.dir/flags.make
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o: .qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o: CMakeFiles/titan-task-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o -MF CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o.d -o CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.o -c /Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp
 
 CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_titan-task-manager_raw_qml_0.cpp.i: cmake_force
@@ -287,6 +315,8 @@ titan__task__manager_OBJECTS = \
 "CMakeFiles/titan-task-manager.dir/titan-task-manager_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/titan-task-manager.dir/src/main.cpp.o" \
 "CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o" \
+"CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o" \
+"CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o" \
 "CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o" \
 "CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o" \
 "CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o" \
@@ -300,6 +330,8 @@ titan__task__manager_EXTERNAL_OBJECTS =
 titan-task-manager: CMakeFiles/titan-task-manager.dir/titan-task-manager_autogen/mocs_compilation.cpp.o
 titan-task-manager: CMakeFiles/titan-task-manager.dir/src/main.cpp.o
 titan-task-manager: CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o
+titan-task-manager: CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o
+titan-task-manager: CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o
 titan-task-manager: CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o
 titan-task-manager: CMakeFiles/titan-task-manager.dir/build/.qt/rcc/qrc_qmake_TitanTaskManager.cpp.o
 titan-task-manager: CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o
@@ -314,7 +346,7 @@ titan-task-manager: /opt/homebrew/lib/QtQml.framework/Versions/A/QtQml
 titan-task-manager: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
 titan-task-manager: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 titan-task-manager: CMakeFiles/titan-task-manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable titan-task-manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chanika/Projects/TitanTaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable titan-task-manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/titan-task-manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

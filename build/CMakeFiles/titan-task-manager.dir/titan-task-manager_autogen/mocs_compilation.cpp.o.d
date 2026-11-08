@@ -1073,4 +1073,8 @@ CMakeFiles/titan-task-manager.dir/titan-task-manager_autogen/mocs_compilation.cp
   /opt/homebrew/include/QtCore/qtmocconstants.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/include/QtCore/q20algorithm.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h
+  /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_autogen/6YEA5652QU/moc_thmmonitor.cpp \
+  /Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_autogen/6YEA5652QU/../../../include/thmmonitor.h \
+  /Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_autogen/6YEA5652QU/../../../include/thmstate.hpp \
+  /opt/homebrew/include/QtCore/QString

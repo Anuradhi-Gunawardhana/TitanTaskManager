@@ -73,6 +73,7 @@ ApplicationWindow {
         title: "Terminate process?"
         modal: true
         anchors.centerIn: parent
+
         standardButtons: Dialog.Yes | Dialog.Cancel
 
         contentItem: Rectangle {
@@ -361,6 +362,7 @@ ApplicationWindow {
 
                             clip: true
                             spacing: 2
+
                             model: window.sortedProcesses
 
                             delegate: Rectangle {
@@ -425,13 +427,14 @@ ApplicationWindow {
                         }
                     }
 
-                    // Process details panel
+                    // Process details
                     Rectangle {
                         Layout.preferredWidth: 230
                         Layout.fillHeight: true
 
                         radius: 7
                         color: "#252930"
+
                         visible: window.selectedProcess !== null
 
                         ColumnLayout {
@@ -564,130 +567,134 @@ ApplicationWindow {
 
                 ColumnLayout {
                     anchors.fill: parent
-                    anchors.margins: 28
-                    spacing: 22
+                    anchors.margins: 24
+                    spacing: 20
 
+                    // Page heading
                     Text {
-                        text: "Workspace Monitoring"
+                        text: "Workspace Monitor"
                         color: "#FFFFFF"
                         font.pixelSize: 19
                         font.bold: true
                     }
 
                     Text {
-                        text: "Monitor applications and workloads across ArchTitan workspaces."
-                        color: "#A0A5AE"
-                        font.pixelSize: 13
-                        wrapMode: Text.WordWrap
-                        Layout.fillWidth: true
+                        text: "Monitor workspace activity managed by ArchTitan."
+                        color: "#9299A4"
+                        font.pixelSize: 12
                     }
 
-                    // THM connection status
+                    // Connection status
                     Rectangle {
                         Layout.fillWidth: true
-                        Layout.preferredHeight: 105
+                        Layout.preferredHeight: 85
 
-                        color: "#252930"
                         radius: 7
-                        border.color: "#383D45"
+                        color: "#292E35"
+                        border.color: "#66523B"
                         border.width: 1
 
                         RowLayout {
                             anchors.fill: parent
-                            anchors.margins: 20
-                            spacing: 16
+                            anchors.margins: 18
+                            spacing: 14
 
                             Rectangle {
                                 width: 10
                                 height: 10
                                 radius: 5
-                                color: "#D59A55"
+                                color: "#D69B58"
                             }
 
                             ColumnLayout {
                                 Layout.fillWidth: true
-                                spacing: 6
+                                spacing: 5
 
                                 Text {
-                                    text: "Titan Hardware Manager"
-                                    color: "#FFFFFF"
-                                    font.pixelSize: 15
+                                    text: "THM Not Connected"
+                                    color: "#E5E7EB"
+                                    font.pixelSize: 14
                                     font.bold: true
                                 }
 
                                 Text {
-                                    text: "Not connected"
-                                    color: "#D59A55"
-                                    font.pixelSize: 12
+                                    text: "Workspace telemetry is unavailable on this system."
+                                    color: "#9299A4"
+                                    font.pixelSize: 11
+                                    wrapMode: Text.WordWrap
+                                }
+                            }
+
+                            Text {
+                                text: "OFFLINE"
+                                color: "#D69B58"
+                                font.pixelSize: 10
+                                font.bold: true
+                            }
+                        }
+                    }
+
+
+
+                    // Planned integration information
+                    Rectangle {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 125
+
+                        radius: 7
+                        color: "#252930"
+
+                        ColumnLayout {
+                            anchors.fill: parent
+                            anchors.margins: 16
+                            spacing: 9
+
+                            Text {
+                                text: "PLANNED THM INTEGRATION"
+                                color: "#9299A4"
+                                font.pixelSize: 10
+                                font.bold: true
+                            }
+
+                            RowLayout {
+                                Layout.fillWidth: true
+
+                                Text {
+                                    text: "Telemetry"
+                                    color: "#AAB0BA"
+                                    font.pixelSize: 11
+                                    Layout.preferredWidth: 95
                                 }
 
                                 Text {
-                                    text: "Waiting for ArchTitan Linux integration"
-                                    color: "#858B95"
+                                    text: "/run/archtitan/thm-state.json"
+                                    color: "#E5E7EB"
                                     font.pixelSize: 11
+                                    font.family: "monospace"
+                                    Layout.fillWidth: true
+                                    elide: Text.ElideMiddle
                                 }
                             }
-                        }
-                    }
 
-                    // Workspace status
-                    Rectangle {
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-
-                        color: "#252930"
-                        radius: 7
-                        border.color: "#383D45"
-                        border.width: 1
-
-                        ColumnLayout {
-                            anchors.centerIn: parent
-                            width: parent.width - 50
-                            spacing: 14
-
-                            Text {
-                                text: "No workspace data available"
-                                color: "#E5E7EB"
-                                font.pixelSize: 16
-                                font.bold: true
-                                Layout.alignment: Qt.AlignHCenter
-                            }
-
-                            Text {
-                                text: "Workspace information will appear here when Titan Task Manager is connected to THM on ArchTitan Linux."
-                                color: "#858B95"
-                                font.pixelSize: 12
-                                horizontalAlignment: Text.AlignHCenter
-                                wrapMode: Text.WordWrap
+                            RowLayout {
                                 Layout.fillWidth: true
+
+                                Text {
+                                    text: "Command API"
+                                    color: "#AAB0BA"
+                                    font.pixelSize: 11
+                                    Layout.preferredWidth: 95
+                                }
+
+                                Text {
+                                    text: "/tmp/titan_hwm.sock"
+                                    color: "#E5E7EB"
+                                    font.pixelSize: 11
+                                    font.family: "monospace"
+                                    Layout.fillWidth: true
+                                    elide: Text.ElideMiddle
+                                }
                             }
-                        }
-                    }
-
-                    // Integration information
-                    ColumnLayout {
-                        Layout.fillWidth: true
-                        spacing: 8
-
-                        Text {
-                            text: "EXPECTED DATA SOURCE"
-                            color: "#858B95"
-                            font.pixelSize: 10
-                            font.bold: true
-                        }
-
-                        Text {
-                            text: "/run/archtitan/thm-state.json"
-                            color: "#A0B8D8"
-                            font.pixelSize: 12
-                            font.family: "monospace"
-                        }
-
-                        Text {
-                            text: "Live workspace data is not available in this macOS build."
-                            color: "#777E89"
-                            font.pixelSize: 11
-                            wrapMode: Text.WordWrap
                         }
                     }
                 }

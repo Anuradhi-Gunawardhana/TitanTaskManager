@@ -1173,4 +1173,7 @@ CMakeFiles/titan-task-manager.dir/src/main.cpp.o: \
   /opt/homebrew/include/QtCore/QHash \
   /opt/homebrew/include/QtCore/QElapsedTimer \
   /opt/homebrew/include/QtCore/qelapsedtimer.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h \
+  /Users/chanika/Projects/TitanTaskManager/include/thmmonitor.h \
+  /Users/chanika/Projects/TitanTaskManager/include/thmstate.hpp \
+  /opt/homebrew/include/QtCore/QString

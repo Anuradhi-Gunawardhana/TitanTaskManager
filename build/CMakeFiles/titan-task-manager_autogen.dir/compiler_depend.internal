@@ -810,11 +810,16 @@
  /Users/chanika/Projects/TitanTaskManager/build/CMakeFiles/4.4.5/CMakeSystem.cmake
  /Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_autogen/moc_predefs.h
  /Users/chanika/Projects/TitanTaskManager/include/systemmonitor.h
+ /Users/chanika/Projects/TitanTaskManager/include/thmmonitor.h
+ /Users/chanika/Projects/TitanTaskManager/include/thmstate.hpp
  /Users/chanika/Projects/TitanTaskManager/src/main.cpp
  /Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp
+ /Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp
+ /Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp
  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QElapsedTimer
  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QHash
  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QObject
+ /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QString
  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QTimer
  /opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QVariantList
  /opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/QList

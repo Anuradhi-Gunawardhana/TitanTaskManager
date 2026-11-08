@@ -4,6 +4,7 @@
 #include <QQmlContext>
 
 #include "systemmonitor.h"
+#include "thmmonitor.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,12 +13,17 @@ int main(int argc, char *argv[])
     app.setApplicationName("Titan Task Manager");
     app.setOrganizationName("ArchTitan");
 
-    SystemMonitor monitor;
+    SystemMonitor systemMonitor;
+    ThmMonitor thmMonitor;
 
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty(
-        "systemMonitor", &monitor
+        "systemMonitor", &systemMonitor
+    );
+
+    engine.rootContext()->setContextProperty(
+        "thmMonitor", &thmMonitor
     );
 
     engine.loadFromModule("TitanTaskManager", "Main");

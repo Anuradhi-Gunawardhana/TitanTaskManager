@@ -1615,6 +1615,18 @@
 			"MU",
 			"6YEA5652QU/moc_systemmonitor.cpp",
 			null
+		],
+		[
+			"/Users/chanika/Projects/TitanTaskManager/include/thmmonitor.h",
+			"MU",
+			"6YEA5652QU/moc_thmmonitor.cpp",
+			null
+		],
+		[
+			"/Users/chanika/Projects/TitanTaskManager/include/thmstate.hpp",
+			"MU",
+			"6YEA5652QU/moc_thmstate.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1707,6 +1719,16 @@
 		[ "/Users/chanika/Projects/TitanTaskManager/src/main.cpp", "MU", null ],
 		[
 			"/Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp",
 			"MU",
 			null
 		]

@@ -16,6 +16,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/chanika/Projects/TitanTaskManager/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp" "CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/build/.rcc/qmlcache/titan-task-manager_qmlcache_loader.cpp.o.d"
   "/Users/chanika/Projects/TitanTaskManager/src/main.cpp" "CMakeFiles/titan-task-manager.dir/src/main.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/src/main.cpp.o.d"
   "/Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp" "CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o.d"
+  "/Users/chanika/Projects/TitanTaskManager/src/thmmonitor.cpp" "CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/src/thmmonitor.cpp.o.d"
+  "/Users/chanika/Projects/TitanTaskManager/src/thmstate.cpp" "CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/src/thmstate.cpp.o.d"
   "/Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_autogen/mocs_compilation.cpp" "CMakeFiles/titan-task-manager.dir/titan-task-manager_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/titan-task-manager_autogen/mocs_compilation.cpp.o.d"
   "/Users/chanika/Projects/TitanTaskManager/build/titan-task-manager_qmltyperegistrations.cpp" "CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o" "gcc" "CMakeFiles/titan-task-manager.dir/titan-task-manager_qmltyperegistrations.cpp.o.d"
   )
