@@ -19,6 +19,9 @@ ApplicationWindow {
     property var selectedProcess: null
     property string actionMessage: ""
 
+    property string sortBy: "cpu"
+    property bool sortDescending: true
+
     property var filteredProcesses: {
         let query = searchInput.text.toLowerCase()
 
@@ -28,16 +31,37 @@ ApplicationWindow {
         })
     }
 
+    property var sortedProcesses: {
+        let list = window.filteredProcesses.slice()
+
+        list.sort(function(a, b) {
+            let result = 0
+
+            if (window.sortBy === "cpu")
+                result = a.cpu - b.cpu
+            else if (window.sortBy === "memory")
+                result = a.memory - b.memory
+            else
+                result = a.name.localeCompare(b.name)
+
+            return window.sortDescending ? -result : result
+        })
+
+        return list
+    }
+
     Connections {
         target: systemMonitor
 
         function onMetricsUpdated() {
             if (window.selectedProcess !== null) {
-                let exists = systemMonitor.processes.some(
+                let updated = systemMonitor.processes.find(
                     p => p.pid === window.selectedProcess.pid
                 )
 
-                if (!exists)
+                if (updated)
+                    window.selectedProcess = updated
+                else
                     window.selectedProcess = null
             }
         }
@@ -52,15 +76,23 @@ ApplicationWindow {
 
         standardButtons: Dialog.Yes | Dialog.Cancel
 
-        contentItem: Text {
-            text: window.selectedProcess
-                  ? "Terminate " + window.selectedProcess.name +
-                    " (PID " + window.selectedProcess.pid + ")?"
-                  : ""
-            color: "#E5E7EB"
-            wrapMode: Text.WordWrap
-            width: 280
-            padding: 15
+        contentItem: Rectangle {
+            implicitWidth: 300
+            implicitHeight: 75
+            color: "#202329"
+
+            Text {
+                anchors.fill: parent
+                anchors.margins: 15
+
+                text: window.selectedProcess
+                      ? "Terminate " + window.selectedProcess.name +
+                        " (PID " + window.selectedProcess.pid + ")?"
+                      : ""
+
+                color: "#E5E7EB"
+                wrapMode: Text.WordWrap
+            }
         }
 
         onAccepted: {
@@ -135,6 +167,12 @@ ApplicationWindow {
                 Item {
                     Layout.fillHeight: true
                 }
+
+                Text {
+                    text: "Titan Task Manager"
+                    color: "#777E89"
+                    font.pixelSize: 10
+                }
             }
         }
 
@@ -200,190 +238,316 @@ ApplicationWindow {
                 color: "#202329"
                 radius: 8
 
-                ColumnLayout {
+                RowLayout {
                     anchors.fill: parent
                     anchors.margins: 18
-                    spacing: 14
+                    spacing: 16
 
-                    // Search and actions
-                    RowLayout {
+                    // Process list section
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        spacing: 10
+                        Layout.fillHeight: true
+                        spacing: 14
+
+                        RowLayout {
+                            Layout.fillWidth: true
+                            spacing: 10
+
+                            Rectangle {
+                                Layout.preferredWidth: 190
+                                height: 35
+                                radius: 5
+                                color: "#30343B"
+
+                                TextInput {
+                                    id: searchInput
+
+                                    anchors.fill: parent
+                                    anchors.margins: 9
+
+                                    color: "#FFFFFF"
+                                    font.pixelSize: 12
+                                    clip: true
+
+                                    Text {
+                                        visible: !searchInput.text
+                                        text: "Search processes..."
+                                        color: "#858B95"
+                                        font.pixelSize: 12
+                                    }
+                                }
+                            }
+
+                            ComboBox {
+                                Layout.preferredWidth: 110
+                                Layout.preferredHeight: 35
+
+                                model: ["CPU", "Memory", "Name"]
+
+                                currentIndex: 0
+
+                                onActivated: function(index) {
+                                    window.sortBy =
+                                        ["cpu", "memory", "name"][index]
+                                }
+                            }
+
+                            Button {
+                                text: window.sortDescending ? "↓" : "↑"
+                                Layout.preferredWidth: 38
+                                Layout.preferredHeight: 35
+
+                                onClicked: {
+                                    window.sortDescending =
+                                        !window.sortDescending
+                                }
+                            }
+
+                            Item {
+                                Layout.fillWidth: true
+                            }
+                        }
+
+                        Text {
+                            text: window.actionMessage
+                            color: "#A0A5AE"
+                            font.pixelSize: 11
+                        }
+
+                        // Table header
+                        RowLayout {
+                            Layout.fillWidth: true
+                            spacing: 10
+
+                            Text {
+                                text: "Process"
+                                color: "#858B95"
+                                Layout.fillWidth: true
+                                font.pixelSize: 12
+                            }
+
+                            Text {
+                                text: "PID"
+                                color: "#858B95"
+                                Layout.preferredWidth: 65
+                                font.pixelSize: 12
+                            }
+
+                            Text {
+                                text: "CPU"
+                                color: "#858B95"
+                                Layout.preferredWidth: 65
+                                font.pixelSize: 12
+                            }
+
+                            Text {
+                                text: "Memory"
+                                color: "#858B95"
+                                Layout.preferredWidth: 85
+                                font.pixelSize: 12
+                            }
+                        }
 
                         Rectangle {
-                            Layout.preferredWidth: 230
-                            height: 35
-                            radius: 5
-                            color: "#30343B"
+                            Layout.fillWidth: true
+                            height: 1
+                            color: "#383D45"
+                        }
 
-                            TextInput {
-                                id: searchInput
+                        ListView {
+                            id: processList
 
-                                anchors.fill: parent
-                                anchors.margins: 9
+                            Layout.fillWidth: true
+                            Layout.fillHeight: true
 
-                                color: "#FFFFFF"
-                                font.pixelSize: 12
-                                clip: true
+                            clip: true
+                            spacing: 2
 
-                                Text {
-                                    visible: !searchInput.text
-                                    text: "Search processes..."
-                                    color: "#858B95"
-                                    font.pixelSize: 12
+                            model: window.sortedProcesses
+
+                            delegate: Rectangle {
+                                required property var modelData
+                                required property int index
+
+                                width: ListView.view.width
+                                height: 38
+                                radius: 4
+
+                                color: window.selectedProcess &&
+                                       window.selectedProcess.pid === modelData.pid
+                                       ? "#3A414B"
+                                       : index % 2 === 0
+                                         ? "#252930" : "transparent"
+
+                                RowLayout {
+                                    anchors.fill: parent
+                                    anchors.leftMargin: 10
+                                    anchors.rightMargin: 10
+                                    spacing: 10
+
+                                    Text {
+                                        text: modelData.name
+                                        color: "#E5E7EB"
+                                        Layout.fillWidth: true
+                                        elide: Text.ElideRight
+                                        font.pixelSize: 12
+                                    }
+
+                                    Text {
+                                        text: modelData.pid
+                                        color: "#A0A5AE"
+                                        Layout.preferredWidth: 65
+                                        font.pixelSize: 12
+                                    }
+
+                                    Text {
+                                        text: modelData.cpu.toFixed(1) + "%"
+                                        color: "#A0A5AE"
+                                        Layout.preferredWidth: 65
+                                        font.pixelSize: 12
+                                    }
+
+                                    Text {
+                                        text: modelData.memory.toFixed(1) + " MB"
+                                        color: "#A0A5AE"
+                                        Layout.preferredWidth: 85
+                                        font.pixelSize: 12
+                                    }
+                                }
+
+                                MouseArea {
+                                    anchors.fill: parent
+
+                                    onClicked: {
+                                        window.selectedProcess = modelData
+                                        window.actionMessage = ""
+                                    }
                                 }
                             }
                         }
+                    }
 
-                        Item {
-                            Layout.fillWidth: true
-                        }
+                    // Process details panel
+                    Rectangle {
+                        Layout.preferredWidth: 230
+                        Layout.fillHeight: true
 
-                        Rectangle {
-                            width: 100
-                            height: 35
-                            radius: 5
+                        radius: 7
+                        color: "#252930"
 
-                            color: window.selectedProcess &&
-                                   window.selectedProcess.canTerminate
-                                   ? "#9D4545" : "#383D45"
+                        visible: window.selectedProcess !== null
+
+                        ColumnLayout {
+                            anchors.fill: parent
+                            anchors.margins: 16
+                            spacing: 16
 
                             Text {
-                                anchors.centerIn: parent
-                                text: "Terminate"
+                                text: "Process Details"
                                 color: "#FFFFFF"
-                                font.pixelSize: 12
+                                font.pixelSize: 16
+                                font.bold: true
                             }
 
-                            MouseArea {
-                                anchors.fill: parent
+                            Rectangle {
+                                Layout.fillWidth: true
+                                height: 1
+                                color: "#383D45"
+                            }
+
+                            Text {
+                                text: window.selectedProcess
+                                      ? window.selectedProcess.name : ""
+                                color: "#E5E7EB"
+                                font.pixelSize: 14
+                                font.bold: true
+                                wrapMode: Text.WrapAnywhere
+                                Layout.fillWidth: true
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                spacing: 12
+
+                                Text {
+                                    text: "PID"
+                                    color: "#858B95"
+                                    font.pixelSize: 11
+                                }
+
+                                Text {
+                                    text: window.selectedProcess
+                                          ? String(window.selectedProcess.pid) : ""
+                                    color: "#FFFFFF"
+                                    font.pixelSize: 13
+                                }
+
+                                Text {
+                                    text: "CPU Usage"
+                                    color: "#858B95"
+                                    font.pixelSize: 11
+                                }
+
+                                Text {
+                                    text: window.selectedProcess
+                                          ? window.selectedProcess.cpu.toFixed(1) + "%"
+                                          : ""
+                                    color: "#FFFFFF"
+                                    font.pixelSize: 13
+                                }
+
+                                Text {
+                                    text: "Memory Usage"
+                                    color: "#858B95"
+                                    font.pixelSize: 11
+                                }
+
+                                Text {
+                                    text: window.selectedProcess
+                                          ? window.selectedProcess.memory.toFixed(1) + " MB"
+                                          : ""
+                                    color: "#FFFFFF"
+                                    font.pixelSize: 13
+                                }
+
+                                Text {
+                                    text: "Termination"
+                                    color: "#858B95"
+                                    font.pixelSize: 11
+                                }
+
+                                Text {
+                                    text: window.selectedProcess
+                                          ? (window.selectedProcess.canTerminate
+                                             ? "Available" : "Restricted")
+                                          : ""
+                                    color: window.selectedProcess &&
+                                           window.selectedProcess.canTerminate
+                                           ? "#56A98B" : "#D58A75"
+                                    font.pixelSize: 13
+                                }
+                            }
+
+                            Item {
+                                Layout.fillHeight: true
+                            }
+
+                            Button {
+                                Layout.fillWidth: true
+                                text: "Terminate Process"
 
                                 enabled: window.selectedProcess &&
                                          window.selectedProcess.canTerminate
 
-                                cursorShape: enabled
-                                              ? Qt.PointingHandCursor
-                                              : Qt.ArrowCursor
-
                                 onClicked: terminateDialog.open()
                             }
-                        }
-                    }
 
-                    Text {
-                        text: window.actionMessage
-                        color: "#A0A5AE"
-                        font.pixelSize: 11
-                    }
-
-                    // Table header
-                    RowLayout {
-                        Layout.fillWidth: true
-                        spacing: 10
-
-                        Text {
-                            text: "Process"
-                            color: "#858B95"
-                            Layout.fillWidth: true
-                            font.pixelSize: 12
-                        }
-
-                        Text {
-                            text: "PID"
-                            color: "#858B95"
-                            Layout.preferredWidth: 75
-                            font.pixelSize: 12
-                        }
-
-                        Text {
-                            text: "CPU"
-                            color: "#858B95"
-                            Layout.preferredWidth: 85
-                            font.pixelSize: 12
-                        }
-
-                        Text {
-                            text: "Memory"
-                            color: "#858B95"
-                            Layout.preferredWidth: 100
-                            font.pixelSize: 12
-                        }
-                    }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-                        height: 1
-                        color: "#383D45"
-                    }
-
-                    // Process list
-                    ListView {
-                        id: processList
-
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-
-                        clip: true
-                        spacing: 2
-
-                        model: window.filteredProcesses
-
-                        delegate: Rectangle {
-                            required property var modelData
-                            required property int index
-
-                            width: ListView.view.width
-                            height: 38
-                            radius: 4
-
-                            color: window.selectedProcess &&
-                                   window.selectedProcess.pid === modelData.pid
-                                   ? "#3A414B"
-                                   : index % 2 === 0
-                                     ? "#252930" : "transparent"
-
-                            RowLayout {
-                                anchors.fill: parent
-                                anchors.leftMargin: 10
-                                anchors.rightMargin: 10
-                                spacing: 10
-
-                                Text {
-                                    text: modelData.name
-                                    color: "#E5E7EB"
-                                    Layout.fillWidth: true
-                                    elide: Text.ElideRight
-                                    font.pixelSize: 12
-                                }
-
-                                Text {
-                                    text: modelData.pid
-                                    color: "#A0A5AE"
-                                    Layout.preferredWidth: 75
-                                    font.pixelSize: 12
-                                }
-
-                                Text {
-                                    text: modelData.cpu.toFixed(1) + "%"
-                                    color: "#A0A5AE"
-                                    Layout.preferredWidth: 85
-                                    font.pixelSize: 12
-                                }
-
-                                Text {
-                                    text: modelData.memory.toFixed(1) + " MB"
-                                    color: "#A0A5AE"
-                                    Layout.preferredWidth: 100
-                                    font.pixelSize: 12
-                                }
-                            }
-
-                            MouseArea {
-                                anchors.fill: parent
+                            Button {
+                                Layout.fillWidth: true
+                                text: "Deselect"
 
                                 onClicked: {
-                                    window.selectedProcess = modelData
-                                    window.actionMessage = ""
+                                    window.selectedProcess = null
                                 }
                             }
                         }
