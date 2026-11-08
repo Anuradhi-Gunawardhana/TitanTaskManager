@@ -73,7 +73,6 @@ ApplicationWindow {
         title: "Terminate process?"
         modal: true
         anchors.centerIn: parent
-
         standardButtons: Dialog.Yes | Dialog.Cancel
 
         contentItem: Rectangle {
@@ -132,7 +131,7 @@ ApplicationWindow {
                 }
 
                 Repeater {
-                    model: ["Overview", "Processes"]
+                    model: ["Overview", "Processes", "Workspaces"]
 
                     delegate: Rectangle {
                         Layout.fillWidth: true
@@ -190,7 +189,7 @@ ApplicationWindow {
                 font.bold: true
             }
 
-            // Overview
+            // OVERVIEW PAGE
             ColumnLayout {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -228,7 +227,7 @@ ApplicationWindow {
                 }
             }
 
-            // Processes
+            // PROCESSES PAGE
             Rectangle {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -243,7 +242,7 @@ ApplicationWindow {
                     anchors.margins: 18
                     spacing: 16
 
-                    // Process list section
+                    // Process list
                     ColumnLayout {
                         Layout.fillWidth: true
                         Layout.fillHeight: true
@@ -362,7 +361,6 @@ ApplicationWindow {
 
                             clip: true
                             spacing: 2
-
                             model: window.sortedProcesses
 
                             delegate: Rectangle {
@@ -434,7 +432,6 @@ ApplicationWindow {
 
                         radius: 7
                         color: "#252930"
-
                         visible: window.selectedProcess !== null
 
                         ColumnLayout {
@@ -550,6 +547,147 @@ ApplicationWindow {
                                     window.selectedProcess = null
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+            // WORKSPACES PAGE
+            Rectangle {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                visible: window.currentPage === "Workspaces"
+
+                color: "#202329"
+                radius: 8
+
+                ColumnLayout {
+                    anchors.fill: parent
+                    anchors.margins: 28
+                    spacing: 22
+
+                    Text {
+                        text: "Workspace Monitoring"
+                        color: "#FFFFFF"
+                        font.pixelSize: 19
+                        font.bold: true
+                    }
+
+                    Text {
+                        text: "Monitor applications and workloads across ArchTitan workspaces."
+                        color: "#A0A5AE"
+                        font.pixelSize: 13
+                        wrapMode: Text.WordWrap
+                        Layout.fillWidth: true
+                    }
+
+                    // THM connection status
+                    Rectangle {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 105
+
+                        color: "#252930"
+                        radius: 7
+                        border.color: "#383D45"
+                        border.width: 1
+
+                        RowLayout {
+                            anchors.fill: parent
+                            anchors.margins: 20
+                            spacing: 16
+
+                            Rectangle {
+                                width: 10
+                                height: 10
+                                radius: 5
+                                color: "#D59A55"
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                spacing: 6
+
+                                Text {
+                                    text: "Titan Hardware Manager"
+                                    color: "#FFFFFF"
+                                    font.pixelSize: 15
+                                    font.bold: true
+                                }
+
+                                Text {
+                                    text: "Not connected"
+                                    color: "#D59A55"
+                                    font.pixelSize: 12
+                                }
+
+                                Text {
+                                    text: "Waiting for ArchTitan Linux integration"
+                                    color: "#858B95"
+                                    font.pixelSize: 11
+                                }
+                            }
+                        }
+                    }
+
+                    // Workspace status
+                    Rectangle {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+
+                        color: "#252930"
+                        radius: 7
+                        border.color: "#383D45"
+                        border.width: 1
+
+                        ColumnLayout {
+                            anchors.centerIn: parent
+                            width: parent.width - 50
+                            spacing: 14
+
+                            Text {
+                                text: "No workspace data available"
+                                color: "#E5E7EB"
+                                font.pixelSize: 16
+                                font.bold: true
+                                Layout.alignment: Qt.AlignHCenter
+                            }
+
+                            Text {
+                                text: "Workspace information will appear here when Titan Task Manager is connected to THM on ArchTitan Linux."
+                                color: "#858B95"
+                                font.pixelSize: 12
+                                horizontalAlignment: Text.AlignHCenter
+                                wrapMode: Text.WordWrap
+                                Layout.fillWidth: true
+                            }
+                        }
+                    }
+
+                    // Integration information
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        spacing: 8
+
+                        Text {
+                            text: "EXPECTED DATA SOURCE"
+                            color: "#858B95"
+                            font.pixelSize: 10
+                            font.bold: true
+                        }
+
+                        Text {
+                            text: "/run/archtitan/thm-state.json"
+                            color: "#A0B8D8"
+                            font.pixelSize: 12
+                            font.family: "monospace"
+                        }
+
+                        Text {
+                            text: "Live workspace data is not available in this macOS build."
+                            color: "#777E89"
+                            font.pixelSize: 11
+                            wrapMode: Text.WordWrap
                         }
                     }
                 }
