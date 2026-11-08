@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/TitanTaskManager/">
+    <file alias="qml/Main.qml">/Users/chanika/Projects/TitanTaskManager/qml/Main.qml</file>
+    <file alias="qml/MetricCard.qml">/Users/chanika/Projects/TitanTaskManager/qml/MetricCard.qml</file>
+  </qresource>
+</RCC>
+

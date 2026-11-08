@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/TitanTaskManager">
+    <file alias="qmldir">/Users/chanika/Projects/TitanTaskManager/build/TitanTaskManager/qmldir</file>
+  </qresource>
+</RCC>
+

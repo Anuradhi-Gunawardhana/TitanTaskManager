@@ -1,0 +1,14 @@
+-rootPath
+/Users/chanika/Projects/TitanTaskManager
+-cmake-output
+-output-file
+/Users/chanika/Projects/TitanTaskManager/build/.qt/qml_imports/titan-task-manager_build.cmake
+-importPath
+/Users/chanika/Projects/TitanTaskManager/build
+-importPath
+/Users/chanika/Projects/TitanTaskManager/build/TitanTaskManager
+-importPath
+/opt/homebrew/share/qt/qml
+-qrcFiles
+/Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/qmake_TitanTaskManager.qrc
+/Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/titan-task-manager_raw_qml_0.qrc

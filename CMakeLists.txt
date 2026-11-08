@@ -12,6 +12,12 @@ qt_standard_project_setup()
 
 qt_add_executable(titan-task-manager
     src/main.cpp
+    src/systemmonitor.cpp
+    include/systemmonitor.h
+)
+
+target_include_directories(titan-task-manager PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
 
 qt_add_qml_module(titan-task-manager
@@ -19,6 +25,7 @@ qt_add_qml_module(titan-task-manager
     VERSION 1.0
     QML_FILES
         qml/Main.qml
+        qml/MetricCard.qml
 )
 
 target_link_libraries(titan-task-manager

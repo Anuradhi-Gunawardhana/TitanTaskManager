@@ -1,0 +1,14 @@
+-I
+/Users/chanika/Projects/TitanTaskManager/build
+-I
+/Users/chanika/Projects/TitanTaskManager/build/TitanTaskManager
+-I
+/Users/chanika/Projects/TitanTaskManager/build
+-I
+/opt/homebrew/share/qt/qml
+--resource
+/Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/qmake_TitanTaskManager.qrc
+--resource
+/Users/chanika/Projects/TitanTaskManager/build/.qt/rcc/titan-task-manager_raw_qml_0.qrc
+--module
+TitanTaskManager

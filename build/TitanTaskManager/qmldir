@@ -1,0 +1,7 @@
+module TitanTaskManager
+typeinfo titan-task-manager.qmltypes
+prefer :/TitanTaskManager/
+Main 1.0 qml/Main.qml
+MetricCard 1.0 qml/MetricCard.qml
+depends QtQuick
+
