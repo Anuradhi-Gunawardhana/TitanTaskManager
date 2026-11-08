@@ -45,7 +45,9 @@ template <> constexpr inline auto SystemMonitor::qt_create_metaobjectdata<qt_met
         "cpuUsage",
         "memoryUsage",
         "memoryText",
-        "processCount"
+        "processCount",
+        "processes",
+        "QVariantList"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -63,6 +65,8 @@ template <> constexpr inline auto SystemMonitor::qt_create_metaobjectdata<qt_met
         QtMocHelpers::PropertyData<QString>(6, QMetaType::QString, QMC::DefaultPropertyFlags, 0),
         // property 'processCount'
         QtMocHelpers::PropertyData<int>(7, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        // property 'processes'
+        QtMocHelpers::PropertyData<QVariantList>(8, 0x80000000 | 9, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -100,6 +104,7 @@ void SystemMonitor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 1: *reinterpret_cast<double*>(_v) = _t->memoryUsage(); break;
         case 2: *reinterpret_cast<QString*>(_v) = _t->memoryText(); break;
         case 3: *reinterpret_cast<int*>(_v) = _t->processCount(); break;
+        case 4: *reinterpret_cast<QVariantList*>(_v) = _t->processes(); break;
         default: break;
         }
     }
@@ -137,7 +142,7 @@ int SystemMonitor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

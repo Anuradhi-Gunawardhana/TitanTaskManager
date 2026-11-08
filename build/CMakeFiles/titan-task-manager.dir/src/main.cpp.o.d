@@ -1165,4 +1165,12 @@ CMakeFiles/titan-task-manager.dir/src/main.cpp.o: \
   /opt/homebrew/include/QtCore/QTimer \
   /opt/homebrew/include/QtCore/qtimer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtimer.h \
-  /opt/homebrew/include/QtCore/QString
+  /opt/homebrew/include/QtCore/QVariantList \
+  /opt/homebrew/include/QtCore/qvariantlist.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariantlist.h \
+  /opt/homebrew/include/QtCore/QList \
+  /opt/homebrew/include/QtCore/QVariant \
+  /opt/homebrew/include/QtCore/QHash \
+  /opt/homebrew/include/QtCore/QElapsedTimer \
+  /opt/homebrew/include/QtCore/qelapsedtimer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h

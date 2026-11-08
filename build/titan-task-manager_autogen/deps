@@ -630,6 +630,7 @@ titan-task-manager_autogen/timestamp: \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/numeric \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/optional \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/ratio \
+	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/set \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/stdbool.h \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/stddef.h \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/stdexcept \
@@ -645,6 +646,7 @@ titan-task-manager_autogen/timestamp: \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/type_traits \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/typeinfo \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/unordered_map \
+	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/unordered_set \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/utility \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/variant \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk/usr/include/c++/v1/vector \
@@ -807,17 +809,24 @@ titan-task-manager_autogen/timestamp: \
 	/Users/chanika/Projects/TitanTaskManager/include/systemmonitor.h \
 	/Users/chanika/Projects/TitanTaskManager/src/main.cpp \
 	/Users/chanika/Projects/TitanTaskManager/src/systemmonitor.cpp \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QElapsedTimer \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QHash \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QObject \
-	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QString \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QTimer \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/include/QtCore/QVariantList \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/QList \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/QVariant \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q20bit.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q20utility.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q23type_traits.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/q23utility.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qabstracteventdispatcher.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qalloc.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qarraydataops.h \
@@ -843,9 +852,12 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qcontainerfwd.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qelapsedtimer.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qeventloop.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qflags.h \
@@ -856,6 +868,7 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qgenericatomic.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qglobal.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qhash.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
@@ -864,6 +877,7 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qlist.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qmap.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qmath.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
@@ -880,6 +894,11 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qset.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qshareddata.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qshareddata_impl.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qsharedpointer.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qsharedpointer_impl.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qstdlibdetection.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qstring.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h \
@@ -904,6 +923,7 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtdeprecationdefinitions.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtformat_impl.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
@@ -917,6 +937,9 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qvariantlist.h \
+	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
 	/opt/homebrew/Cellar/qtbase/6.12.0_2/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
@@ -1917,82 +1940,23 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargetsPrecheck.cmake \
 	/opt/homebrew/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
 	/opt/homebrew/lib/cmake/Qt6QuickTools/Qt6SvgToQmlMacros.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in \
-	/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp \
 	/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in \
 	/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
 	/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake \
-	/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake \
 	/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
 	/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
 	/opt/homebrew/share/cmake/Modules/CheckIncludeFileCXX.cmake \
 	/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	/opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
 	/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake \
 	/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
 	/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake \
@@ -2001,20 +1965,16 @@ titan-task-manager_autogen/timestamp: \
 	/opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-	/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake \
-	/opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CheckCommon.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
-	/opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake \
 	/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake \
 	/opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake \
 	/opt/homebrew/share/cmake/Modules/MacroAddFileDependencies.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake \
-	/opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake \
 	/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake \

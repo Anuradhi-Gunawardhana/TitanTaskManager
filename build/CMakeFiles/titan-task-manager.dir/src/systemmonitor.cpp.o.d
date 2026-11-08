@@ -1026,7 +1026,51 @@ CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qeventloop.h \
   /opt/homebrew/include/QtCore/qdeadlinetimer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qdeadlinetimer.h \
-  /opt/homebrew/include/QtCore/QString \
+  /opt/homebrew/include/QtCore/QVariantList \
+  /opt/homebrew/include/QtCore/qvariantlist.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariantlist.h \
+  /opt/homebrew/include/QtCore/QList \
+  /opt/homebrew/include/QtCore/QVariant \
+  /opt/homebrew/include/QtCore/qvariant.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
+  /opt/homebrew/include/QtCore/qdebug.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
+  /opt/homebrew/include/QtCore/qtextstream.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qtextstream.h \
+  /opt/homebrew/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /opt/homebrew/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qshareddata.h \
+  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /opt/homebrew/include/QtCore/qmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /opt/homebrew/include/QtCore/qset.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qset.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qhash.h \
+  /opt/homebrew/include/QtCore/qvarlengtharray.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /opt/homebrew/include/QtCore/qalloc.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qalloc.h \
+  /opt/homebrew/include/QtCore/q23utility.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/q23utility.h \
+  /opt/homebrew/include/QtCore/q20utility.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/q20utility.h \
+  /opt/homebrew/include/QtCore/QHash \
+  /opt/homebrew/include/QtCore/QElapsedTimer \
+  /opt/homebrew/include/QtCore/qelapsedtimer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h \
+  /opt/homebrew/include/QtCore/QVariantMap \
+  /opt/homebrew/include/QtCore/qvariantmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariantmap.h \
+  /opt/homebrew/include/QtCore/QMap /opt/homebrew/include/QtCore/QString \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/mach.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/std_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/boolean.h \
