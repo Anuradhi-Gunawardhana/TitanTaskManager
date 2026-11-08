@@ -1067,10 +1067,6 @@ CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o: \
   /opt/homebrew/include/QtCore/QElapsedTimer \
   /opt/homebrew/include/QtCore/qelapsedtimer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h \
-  /opt/homebrew/include/QtCore/QVariantMap \
-  /opt/homebrew/include/QtCore/qvariantmap.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvariantmap.h \
-  /opt/homebrew/include/QtCore/QMap /opt/homebrew/include/QtCore/QString \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/mach.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/std_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/boolean.h \
@@ -1182,6 +1178,11 @@ CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/lock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/event.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/vm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libproc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_s_ifmt.h \
@@ -1209,4 +1210,8 @@ CMakeFiles/titan-task-manager.dir/src/systemmonitor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/netinet6/in6.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/netinet/tcp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/uuid/uuid.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/availability.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/availability.h \
+  /opt/homebrew/include/QtCore/QVariantMap \
+  /opt/homebrew/include/QtCore/qvariantmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariantmap.h \
+  /opt/homebrew/include/QtCore/QMap /opt/homebrew/include/QtCore/QString

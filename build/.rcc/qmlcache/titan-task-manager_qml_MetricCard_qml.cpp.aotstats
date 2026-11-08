@@ -42,7 +42,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 46,
+                            "line": 47,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 48,
+                            "line": 49,
                             "message": ""
                         }
                     ],

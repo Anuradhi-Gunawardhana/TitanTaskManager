@@ -17,7 +17,7 @@ qt_add_executable(titan-task-manager
 )
 
 target_include_directories(titan-task-manager PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 qt_add_qml_module(titan-task-manager

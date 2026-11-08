@@ -7,6 +7,7 @@
 #include <QVariantList>
 #include <QHash>
 #include <QElapsedTimer>
+#include <vector>
 
 class SystemMonitor : public QObject
 {
@@ -27,6 +28,8 @@ public:
     int processCount() const;
     QVariantList processes() const;
 
+    Q_INVOKABLE bool terminateProcess(int pid);
+
 signals:
     void metricsUpdated();
 
@@ -40,6 +43,7 @@ private:
     int m_processCount = 0;
 
     QVariantList m_processes;
+
     QHash<int, quint64> previousProcessCpu;
     QElapsedTimer processTimer;
 

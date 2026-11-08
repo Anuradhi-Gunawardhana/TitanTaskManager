@@ -2,7 +2,22 @@
     "classes": [
         {
             "className": "SystemMonitor",
-            "lineNumber": 11,
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pid",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 31,
+                    "name": "terminateProcess",
+                    "returnType": "bool"
+                }
+            ],
             "object": true,
             "properties": [
                 {
@@ -10,7 +25,7 @@
                     "designable": true,
                     "final": false,
                     "index": 0,
-                    "lineNumber": 15,
+                    "lineNumber": 16,
                     "name": "cpuUsage",
                     "notify": "metricsUpdated",
                     "override": false,
@@ -27,7 +42,7 @@
                     "designable": true,
                     "final": false,
                     "index": 1,
-                    "lineNumber": 16,
+                    "lineNumber": 17,
                     "name": "memoryUsage",
                     "notify": "metricsUpdated",
                     "override": false,
@@ -44,7 +59,7 @@
                     "designable": true,
                     "final": false,
                     "index": 2,
-                    "lineNumber": 17,
+                    "lineNumber": 18,
                     "name": "memoryText",
                     "notify": "metricsUpdated",
                     "override": false,
@@ -61,7 +76,7 @@
                     "designable": true,
                     "final": false,
                     "index": 3,
-                    "lineNumber": 18,
+                    "lineNumber": 19,
                     "name": "processCount",
                     "notify": "metricsUpdated",
                     "override": false,
@@ -78,7 +93,7 @@
                     "designable": true,
                     "final": false,
                     "index": 4,
-                    "lineNumber": 19,
+                    "lineNumber": 20,
                     "name": "processes",
                     "notify": "metricsUpdated",
                     "override": false,
@@ -96,7 +111,7 @@
                 {
                     "access": "public",
                     "index": 0,
-                    "lineNumber": 31,
+                    "lineNumber": 34,
                     "name": "metricsUpdated",
                     "returnType": "void"
                 }
@@ -105,7 +120,7 @@
                 {
                     "access": "private",
                     "index": 1,
-                    "lineNumber": 34,
+                    "lineNumber": 37,
                     "name": "updateMetrics",
                     "returnType": "void"
                 }

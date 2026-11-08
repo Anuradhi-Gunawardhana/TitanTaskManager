@@ -42,7 +42,8 @@ Rectangle {
             color: "#383D45"
 
             Rectangle {
-                width: parent.width * Math.max(0, Math.min(100, root.progress)) / 100
+                width: parent.width *
+                       Math.max(0, Math.min(100, root.progress)) / 100
                 height: parent.height
                 radius: 3
                 color: root.barColor
